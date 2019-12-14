@@ -1,0 +1,114 @@
+body {
+	widows: 100%;
+}
+
+.splash-intro {
+	background-image: url('../Img/darkHotel.jpg');
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 800px;
+	width: 100%;
+}
+
+.logo-container {
+	margin-top: -105px;
+	margin-left: 300px;
+}
+.logo-link {
+}
+.logo-img {
+	height: 350px;
+	z-index: 2;
+	/* box-shadow: 0px 14px 30px 0.5px rgba(238, 234, 234, 0.38); */
+	float: left;
+	/* box-shadow: 0px 14px 30px .5px rgba(238, 234, 234, 0.38); */
+}
+
+.intro-fill {
+}
+
+.sloan-container {
+}
+
+.slogan {
+	color: cornsilk;
+	margin-left: -1rem;
+	font-size: 28px;
+	font-family: cursive;
+	padding-top: 21rem;
+	z-index: 1;
+}
+
+.menu-options {
+	background-color: black;
+	opacity: 80%;
+	margin-left: 150px;
+	margin-top: 290px;
+	display: none;
+}
+
+.menuShow {
+	margin-left: 636px;
+    margin-top: 0px;
+    display: inline-grid;
+    transition: 0.4s;
+}
+
+.blackScreen{
+    background-color: black;
+    opacity: 20%;
+}
+
+.options {
+    text-align: center;
+    margin-left: 50px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-decoration: none;
+    font-size: 22px;
+    color: cornsilk;
+    transition: 0.4s;
+}
+
+.options:hover {
+	transition: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+	border-bottom: 2px cornsilk solid;
+}
+
+.menu {
+}
+.menu-container {
+	display: inline-block;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 90%;
+    float: right;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+	width: 45px;
+	height: 5px;
+	background-color: black;
+	margin: 6px 0;
+	transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+	opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+	-webkit-transform: rotate(45deg) translate(-8px, -8px);
+	transform: rotate(45deg) translate(-8px, -8px);
+}
