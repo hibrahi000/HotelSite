@@ -1,114 +1,97 @@
+/* ! Reset */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* ___ core elements ___ */
+
 body {
-	widows: 100%;
+	line-height: 1.7em;
 }
 
-.splash-intro {
-	background-image: url('../Img/darkHotel.jpg');
-	background-position: top;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 800px;
-	width: 100%;
+a {
+	color: #333;
+	text-decoration: none;
 }
 
-.logo-container {
-	margin-top: -105px;
-	margin-left: 300px;
-}
-.logo-link {
-}
-.logo-img {
-	height: 350px;
-	z-index: 2;
-	/* box-shadow: 0px 14px 30px 0.5px rgba(238, 234, 234, 0.38); */
-	float: left;
-	/* box-shadow: 0px 14px 30px .5px rgba(238, 234, 234, 0.38); */
+h1,
+h2,
+h3 {
+	padding-bottom: 20px;
 }
 
-.intro-fill {
+p {
+	margin: 10px, 0;
 }
 
-.sloan-container {
+/**** Utility Classes ****/
+.container {
+	margin: auto;
+	max-width: 1100px;
+	overflow: auto;
+	padding: 0 20px;
 }
 
-.slogan {
-	color: cornsilk;
-	margin-left: -1rem;
-	font-size: 28px;
-	font-family: cursive;
-	padding-top: 21rem;
-	z-index: 1;
-}
-
-.menu-options {
+/* ___ Nav Bar Style ___ */
+.navBar {
 	background-color: black;
-	opacity: 80%;
-	margin-left: 150px;
-	margin-top: 290px;
-	display: none;
-}
-
-.menuShow {
-	margin-left: 636px;
-    margin-top: 0px;
-    display: inline-grid;
-    transition: 0.4s;
-}
-
-.blackScreen{
-    background-color: black;
-    opacity: 20%;
+	color: white;
+	overflow: auto;
+	height: 120px;
 }
 
 .options {
-    text-align: center;
-    margin-left: 50px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    text-decoration: none;
-    font-size: 22px;
-    color: cornsilk;
-    transition: 0.4s;
+	color: cornsilk;
+	display: block;
+	padding-top: 72px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 18px;
+}
+.current {
+	border-bottom: 2px cornsilk solid;
+	font-weight: 600;
 }
 
 .options:hover {
-	transition: cubic-bezier(0.6, 0.04, 0.98, 0.335);
 	border-bottom: 2px cornsilk solid;
+	font-weight: 600;
 }
 
-.menu {
+.logo-link {
+	float: left;
+	padding-left: 50px;
+	margin-top: -30px;
 }
-.menu-container {
-	display: inline-block;
-    cursor: pointer;
-    margin-top: 50px;
-    margin-left: 90%;
-    float: right;
-}
-
-.bar1,
-.bar2,
-.bar3 {
-	width: 45px;
-	height: 5px;
-	background-color: black;
-	margin: 6px 0;
-	transition: 0.4s;
+.navBar ul {
+	list-style: none;
+	float: right;
 }
 
-/* Rotate first bar */
-.change .bar1 {
-	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
-	transform: rotate(-45deg) translate(-9px, 6px);
+.navBar ul li {
+	float: left;
+	padding-right: 10px;
 }
 
-/* Fade out the second bar */
-.change .bar2 {
-	opacity: 0;
+#showcase {
+	background-image: url('../Img/bedRoomOpp.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 40rem;
+	background-size: cover;
 }
 
-/* Rotate last bar */
-.change .bar3 {
-	-webkit-transform: rotate(45deg) translate(-8px, -8px);
-	transform: rotate(45deg) translate(-8px, -8px);
+.showcase-content h1 {
+	color: honeydew;
+	font-family: cursive;
+	padding-top: 10rem;
+	padding-left: 16px;
+}
+
+.showcase-content a {
+	color: honeydew;
+	padding-left: 31rem;
 }

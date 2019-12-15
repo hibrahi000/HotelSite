@@ -11,33 +11,31 @@
 </head>
 
 <body>
-    <!-- This is the top layer leading into everything else.... -->
-    <div class="splash-intro">
-        <div class="menu">
-            <div class="menu-container" onclick="hamburger(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-              </div>
-    
-            <div class="menu-options" id="menuOpt">
-                <a class="options" href="about.html">About</a>
-                <a class="options" href="amenities.html">Amenities</a>
-                <a class="options" href="rooms.html">Rooms</a>
-                <a class="options" href="contact.html">Contact</a>
-                <div class="blackScreen"></div>
-            </div>
-        </div>
+    <header class="splash-intro">
+        <nav class="navBar">
+                <a class="logo-link" href="index.html"> <img class="logo-img" src="../Img/hotelLogo.png" alt=""></a>
+                <div class="container">
+                    <ul>
+                       <li> <a class="options current" href="about.html">About</a> </li>
+                       <li> <a class="options" href="amenities.html">Amenities</a> </li>
+                       <li> <a class="options" href="rooms.html">Rooms</a> </li>
+                       <li> <a class="options" href="contact.html">Contact</a> </li>
+                    </ul>
+                    
+                </div>
+        </nav>
+    </header>
+    <div id="showcase">
+        <div class="container">
+            <div class="showcase-content">
+                <h1>Indulge yourself to our finest service</h1>
 
-        <div class="logo-container">
-            <a class="logo-link" href="index.html"> <img class="logo-img" src="../Img/hotelLogo.png" alt=""></a>
-            <div class="slogan">
-                <p>Indulge yourself to our finest service</p>
+                <a href="#aboutSection">Learn More</a>
+                
             </div>
         </div>
 
     </div>
-
     <script src="../Scripts/scripts.js" type="text/javascript"></script>
 </body>
 
